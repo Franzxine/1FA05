@@ -1,0 +1,21 @@
+```python
+import math
+
+# Ask the user for the coordinates of two points
+x1 = float(input("Enter x1: "))
+y1 = float(input("Enter y1: "))
+x2 = float(input("Enter x2: "))
+y2 = float(input("Enter y2: "))
+
+# Calculate distance using math.sqrt() and math.pow()
+distance = math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2))
+
+# Print the final result rounded to 2 decimal places
+print(f"The distance between ({x1}, {y1}) and ({x2}, {y2}) is {distance:.2f}")
+
+'''
+Reflection:
+Using a library is way more practical because it saves you from reinventing the wheel for complex math operations. In this task, functions like math.sqrt() and math.pow() let me write the distance formula cleanly in just one line. Without the library, figuring out a square root manually would mean writing a whole extra algorithm, making the code much longer and easier to mess up.
+'''
+
+```
